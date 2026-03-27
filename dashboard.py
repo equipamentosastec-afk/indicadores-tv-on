@@ -36,7 +36,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # Caminho para o vídeo dentro da pasta data
-video_path = 'data/IndicadoreTV.mp4'
+video_path = 'data/IndicadoresTV.mp4'
 
 try:
     with open(video_path, 'rb') as v_file:
@@ -46,7 +46,7 @@ try:
     # loop=True (recomeça sozinho)
     # autoplay=True (inicia sozinho)
     # muted=True (obrigatório para autoplay funcionar na maioria das TVs)
-    st.video(video_bytes, format="IndicadoreTV/mp4", loop=True, autoplay=True, muted=True)
+    st.video(video_bytes, format="IndicadoresTV.mp4", loop=True, autoplay=True, muted=True)
 
 except FileNotFoundError:
-    st.error("Erro: O arquivo 'data/IndicadoreTV.mp4' não foi encontrado.")
+    st.error("Erro: O arquivo 'data/IndicadoresTV.mp4' não foi encontrado.")

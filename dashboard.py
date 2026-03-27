@@ -46,14 +46,7 @@ try:
     # loop=True (recomeça sozinho)
     # autoplay=True (inicia sozinho)
     # muted=True (obrigatório para autoplay funcionar na maioria das TVs)
-<<<<<<< HEAD
     st.video(video_bytes, format="video/mp4", loop=True, autoplay=True, muted=True)
 
 except FileNotFoundError:
     st.error("Erro: O arquivo 'data/IndicadoresTV.mp4' não foi encontrado.")
-=======
-    st.video(video_bytes, format="IndicadoresTV/mp4", loop=True, autoplay=True, muted=True)
-
-except FileNotFoundError:
-    st.error("Erro: O arquivo 'data/IndicadoreTV.mp4' não foi encontrado.")
->>>>>>> 2a0fc0e8e450c6b3ce5a3e772affb2ef9888cf43
